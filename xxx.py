@@ -26,7 +26,7 @@ def is_point_inside_unit_circle(p):
 
 
 t_0 = time()
-
+n = 100
 # parallelize creates a spark Resilient Distributed Dataset (RDD)
 # its values are useless in this case
 # but allows us to distribute our calculation (inside function)
