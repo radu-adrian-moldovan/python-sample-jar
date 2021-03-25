@@ -8,15 +8,13 @@ from random import random
 from operator import add
 from pyspark.sql import SparkSession
 
-from xyz import TEST
-
-print(f">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> xyz: {TEST} <<<<<<<<<<<<<<<<<<<<<<<<<")
-
+TEST = "xxx_test"
 
 def my_print(x):
     print(x)
     
 print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> before <<<<<<<<<<<<<<<<<<<<<<<<<")
+
 
 spark = SparkSession.builder.appName('xxx CalculatePi').getOrCreate()
 sc = spark.sparkContext
@@ -66,5 +64,5 @@ def sample_function(sc: SparkContext):
 
 print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> after <<<<<<<<<<<<<<<<<<<<<<<<<")
 if __name__ == "__main__":
-    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> __main__ sample_function <<<<<<<<<<<<<<<<<<<<<<<<<")
+    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> sample_function <<<<<<<<<<<<<<<<<<<<<<<<<")
 
