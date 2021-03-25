@@ -31,7 +31,6 @@ def sample_function(sc: SparkContext):
     return (odd_numbers)
 
 print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> after <<<<<<<<<<<<<<<<<<<<<<<<<")
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> sample_function <<<<<<<<<<<<<<<<<<<<<<<<<")
 
